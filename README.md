@@ -14,7 +14,7 @@ CREATE DATABASE makersbnb_test;
 CREATE TABLE users(id SERIAL PRIMARY KEY, username VARCHAR(30), name VARCHAR(50), email VARCHAR(50), password VARCHAR(100));
 CREATE TABLE listings(id SERIAL PRIMARY KEY, title VARCHAR(50), description VARCHAR(200), price INTEGER, host_id INTEGER REFERENCES users (id));
 ```
-* The following databases are sufficicent for testing, if you would like to use the website, register a user, login (ADD STUFF)!
+* The following databases are sufficicent for testing, if you would like to use the website, register a user and login.
 * `rspec` to view tests
 * `rackup` to run ruby server when in root directory
 * `http://127.0.0.1:9292/` in browser to view app
@@ -28,12 +28,12 @@ Our MVP will include the following functionality:
 - [x] See a list of spaces
 - [x] Username and email are unique
 - [x] User is welcomed after signing up
-- [ ] Encryping password
-- [ ] CSS
-- [ ] Logout
-- [ ] List a space as a user
-- [ ] Listing page includes information about listings and to request a booking
-- [ ] Sort out the README
+- [x] Encryping password
+- [x] CSS
+- [x] Logout
+- [x] List a space as a user
+- [x] Listing page includes information about listings and to request a booking
+- [x] Sort out the README
 
 
 User stories
